@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::any("/recharge/","TreasureController@recharge");
-
+Route::any("/recharge_return","TreasureController@recharge_return");
+Route::any("/recharge_notify","TreasureController@recharge_notify");
